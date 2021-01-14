@@ -1,0 +1,14 @@
+.accordion .title {
+    cursor: pointer;
+}
+
+.accordion .person-container {
+    display: none;
+}
+.accordion .person-container.visible {
+    display: grid;
+}
+
+.accordion .person > img {
+    width: 100%;
+}

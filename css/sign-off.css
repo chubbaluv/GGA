@@ -1,0 +1,36 @@
+#sign-off-container .copy-container {
+    overflow: visible;
+    height: 350px
+}
+.sign-off-copy {
+    overflow: visible;
+    margin-top: 50px;
+    transform: rotate(-15deg) translate(-50px);
+}
+.sign-off-copy > * {
+    overflow: visible;
+}
+
+@media screen and (max-width: 800px) {
+    .sign-off-copy h1 {
+        font-size: 40px;
+    }
+
+    .sign-off-copy h2 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sign-off-copy {
+        transform: rotate(-15deg) translate(-25px);
+    }
+
+    .sign-off-copy h1 {
+        font-size: 30px;
+    }
+
+    .sign-off-copy h2 {
+        font-size: 18px;
+    }
+}

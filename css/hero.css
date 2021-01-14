@@ -1,0 +1,14 @@
+#hero-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero-container h1 {
+    line-height: 1;
+}
+
+#hero-container .f-dir-row {
+    flex-wrap: wrap;
+}
