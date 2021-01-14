@@ -135,5 +135,3 @@ function closePopup(thisObj) {
     $(thisObj).parents(".popup-container").fadeOut();
     $('html').css('overflow-y', 'scroll');
 }
-
-//FORM HANDLER
