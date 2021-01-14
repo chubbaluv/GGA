@@ -4,14 +4,9 @@ jQuery(document).ready(function() {
     $(window).scroll(function() {
       // checks if window is scrolled more than 200px, adds/removes visible class
       if($(this).scrollTop() > 500) { 
-          $('#desktop-menu').addClass('visible');
+          $('#desktop-menu, #mobile-menu').addClass('visible');
       } else {
-          $('#desktop-menu').removeClass('visible');
-      }
-      if($(this).scrollTop() > 120) { 
-          $('#mobile-menu').addClass('color-bg');
-      } else {
-          $('#mobile-menu').removeClass('color-bg');
+          $('#desktop-menu, #mobile-menu').removeClass('visible');
       }
     });
 });
@@ -22,8 +17,7 @@ jQuery(document).ready(function() {
 var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
-var mobileHeight = $('#mobile-menu').outerHeight();
-var desktopHeight = $('html').offset().top;
+var scrollThreshold = $('html').offset().top;
 
 $(window).scroll(function(event){
     didScroll = true;
@@ -45,7 +39,7 @@ function hasScrolled() {
 
     // If they scrolled down and are past the navbar, add class .nav-up.
     // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > mobileHeight){
+    if (st > lastScrollTop && st > scrollThreshold){
         // Scroll Down
         $('#mobile-menu').removeClass('nav-down').addClass('nav-up');
     } else {
@@ -55,13 +49,7 @@ function hasScrolled() {
         }
     }
 
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > desktopHeight){
+    if (st > lastScrollTop && st > scrollThreshold){
         // Scroll Down
         $('#desktop-menu').removeClass('nav-down').addClass('nav-up');
     } else {
