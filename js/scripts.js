@@ -98,7 +98,7 @@ jQuery(function($) {
 });
 
 //ACCORDION CONTROL
-jQuery(function($) {
+/*jQuery(function($) {
     $(".accordion .title").click(function() {
         if (!$(this).hasClass("active")) {
             $(this).addClass("active");
@@ -116,7 +116,7 @@ jQuery(function($) {
             $(this).children('.indicator').html("+");
         }
     });
-});
+});*/
 
 //OPEN POPUPS 
 function openPopup(popup) {
@@ -136,19 +136,4 @@ function closePopup(thisObj) {
     $('html').css('overflow-y', 'scroll');
 }
 
-
-//Form Handler
-var $form = $('form#capture-form'),
-    url = 'https://script.google.com/macros/s/AKfycbyn6-Te0A7dfH42PSuWqhFjJYOO0kSi-qVl-KfsDzmsGjXTphsw/exec';
-
-$('#submit-form').on('click', function(e) {
-  e.preventDefault();
-  var jqxhr = $.ajax({
-    url: url,
-    method: "GET",
-    dataType: "json",
-    data: $form.serializeObject()
-  }).success(
-    console.log('success!')
-  );
-})
+//FORM HANDLER

@@ -5,7 +5,7 @@
 .sign-off-copy {
     overflow: visible;
     margin-top: 50px;
-    transform: rotate(-15deg) translate(-50px);
+    transform: rotate(-15deg);
 }
 .sign-off-copy > * {
     overflow: visible;
@@ -23,7 +23,7 @@
 
 @media screen and (max-width: 600px) {
     .sign-off-copy {
-        transform: rotate(-15deg) translate(-25px);
+        transform: rotate(-15deg);
     }
 
     .sign-off-copy h1 {
