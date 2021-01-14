@@ -710,7 +710,7 @@ h6 {
 
 @media (max-width: 900px) {
   .cta-banner-container h2 {
-    font-size: 32px;
+    text-align: center;
   }
 }
 
