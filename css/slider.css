@@ -62,6 +62,11 @@
     color: var(--green);
 }
 
+.card ul li {
+    margin: 0 0 10px 0;
+    line-height: 1.4;
+}
+
 @media screen and (max-width: 900px) {
     .slide-container {
         flex-direction: column;
@@ -92,3 +97,4 @@
         margin: 0 0 30px 0;
     }
 }
+
