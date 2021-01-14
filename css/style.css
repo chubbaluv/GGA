@@ -703,7 +703,7 @@ h6 {
   display: block;
 }
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
   .cta-banner-container .btn-primary {
     height: 50px;
     font-size: 14px;
@@ -711,13 +711,13 @@ h6 {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
   .cta-banner-container h2 {
     font-size: 32px;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .cta-banner-container .f-dir-row {
     flex-direction: column;
     align-items: center;

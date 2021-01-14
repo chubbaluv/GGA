@@ -67,7 +67,7 @@
     line-height: 1.4;
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
     .slide-container {
         flex-direction: column;
     }

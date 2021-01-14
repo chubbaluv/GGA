@@ -11,7 +11,7 @@
     overflow: visible;
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
     .sign-off-copy h1 {
         font-size: 40px;
     }
@@ -21,7 +21,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .sign-off-copy {
         transform: rotate(-15deg);
     }

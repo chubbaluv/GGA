@@ -157,21 +157,21 @@ nav .grid .left-nav img {
 }
 
 /***** RESPONSIVE STYLING *****/
-@media screen and (max-width: 1150px) {
+@media (max-width: 1150px) {
   nav .grid .left-nav img,
   #mini-menu .grid .left-nav {
     transform: translateX(0);
   }
 }
 
-@media screen and (min-width: 990px) {
+@media (min-width: 990px) {
   #mobile-nav,
   #mobile-nav.open {
     transform: translateY(-100%);
   }
 }
 
-@media screen and (max-width: 990px) {
+@media (max-width: 990px) {
   nav#desktop-menu,
   #mini-menu {
     display: none;
