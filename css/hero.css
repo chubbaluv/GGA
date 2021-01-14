@@ -12,3 +12,10 @@
 #hero-container .f-dir-row {
     flex-wrap: wrap;
 }
+
+@media (max-height: 1100px) {
+    #hero-container {
+        height: auto;
+        padding: 100px 0;
+    }
+}
