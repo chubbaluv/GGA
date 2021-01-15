@@ -54,6 +54,11 @@
 
 .col-2-flow > div {
     -webkit-column-break-inside: avoid;
+    margin: 30px 0 0 0;
+}
+
+.col-2-flow > div:first-child {
+    margin: 0;
 }
 
 .card h3,

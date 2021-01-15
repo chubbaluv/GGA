@@ -42,19 +42,11 @@ function hasScrolled() {
     if (st > lastScrollTop && st > scrollThreshold){
         // Scroll Down
         $('#mobile-menu').removeClass('nav-down').addClass('nav-up');
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-        $('#mobile-menu').removeClass('nav-up').addClass('nav-down');
-        }
-    }
-
-    if (st > lastScrollTop && st > scrollThreshold){
-        // Scroll Down
         $('#desktop-menu').removeClass('nav-down').addClass('nav-up');
     } else {
         // Scroll Up
         if(st + $(window).height() < $(document).height()) {
+            $('#mobile-menu').removeClass('nav-up').addClass('nav-down');
             $('#desktop-menu').removeClass('nav-up').addClass('nav-down');
         }
     }
