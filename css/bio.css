@@ -14,13 +14,10 @@
     flex-direction: column;
 }
 
-.content-container {
-    overflow-y: auto;
-}
-
 .content-container .copy-container {
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
 }
 
 .content-container .copy-container ul {
