@@ -1,6 +1,7 @@
 .basics {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .basics img {
@@ -13,10 +14,13 @@
     flex-direction: column;
 }
 
+.content-container {
+    overflow-y: auto;
+}
+
 .content-container .copy-container {
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
 }
 
 .content-container .copy-container ul {
@@ -25,4 +29,15 @@
 
 .content-container .copy-container ul li {
     list-style: none;
+}
+
+@media (max-width: 500px) {
+    .basics {
+        flex-direction: column;
+    }
+
+    .basics img {
+        max-width: 100%;
+        margin: 0 0 10px 0;
+    }
 }
