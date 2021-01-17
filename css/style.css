@@ -29,6 +29,7 @@
   --gold: #D4AF37;
   --red: #AA4E3D;
   /* Greyscale Palette */
+  --coolGrey : #f6f6f6;
   --lightGrey: #A8A5A5;
   /*Typography*/
   --baseFontSize: 1.125rem;
@@ -66,6 +67,31 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: none;
+  scrollbar-width: thin;
+  scrollbar-color: var(--green) var(--coolGrey);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--green) var(--coolGrey);
+}
+
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  width: 
+  11px;
+}
+
+body::-webkit-scrollbar-track,
+*::-webkit-scrollbar-track {
+  background: var(--coolGrey);
+}
+
+body::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb {
+  background-color: var(--green) ;
+  border-radius: 6px;
+  border: 3px solid var(--coolGrey);
 }
 
 .row-fluid [class*="span"] {
