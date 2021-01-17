@@ -13,7 +13,7 @@
     flex-wrap: wrap;
 }
 
-@media (max-height: 1100px) {
+@media (max-height: 1000px) {
     #hero-container {
         height: auto;
         padding: 100px 0;

@@ -2,10 +2,12 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
+    min-height: fit-content;
 }
 
 .basics img {
-    width: 100%;
+    width: 240px;
     max-width: 48%;
 }
 
@@ -31,6 +33,7 @@
 @media (max-width: 600px) {
     .basics {
         flex-direction: column;
+        flex-wrap: nowrap;
     }
 
     .basics img {
