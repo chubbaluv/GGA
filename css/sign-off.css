@@ -9,6 +9,7 @@
 }
 .sign-off-copy > * {
     overflow: visible;
+    text-align: center;
 }
 
 @media (max-width: 800px) {
@@ -32,5 +33,15 @@
 
     .sign-off-copy h2 {
         font-size: 18px;
+    }
+}
+
+@media (max-width: 500px) {
+    .sign-off-copy h1 {
+        font-size: 22px;
+    }
+
+    .sign-off-copy h2 {
+        font-size: 16px;
     }
 }
