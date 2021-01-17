@@ -58,7 +58,12 @@ function hasScrolled() {
 jQuery(function($) {
     $(".burger").click(function() {
         $("#mobile-nav").toggleClass("open");
-          $(".burger").toggleClass("close");
+        $(".burger").toggleClass("close");
+    });
+
+    $("#mobile-nav a").click(function() {
+        $("#mobile-nav").removeClass("open");
+        $(".burger").removeClass("close");
     });
 });
 
