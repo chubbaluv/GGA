@@ -18,3 +18,11 @@
     flex-direction: column;
     overflow-y: auto;
 }
+
+.content-container .copy-container ul {
+    padding: 0;
+}
+
+.content-container .copy-container ul li {
+    list-style: none;
+}
