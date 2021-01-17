@@ -28,7 +28,7 @@
     list-style: none;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .basics {
         flex-direction: column;
     }
