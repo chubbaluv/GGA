@@ -61,7 +61,7 @@ jQuery(function($) {
         $(".burger").toggleClass("close");
     });
 
-    $("#mobile-nav a").click(function() {
+    $("#mobile-nav a, #mobile-nav h4").click(function() {
         $("#mobile-nav").removeClass("open");
         $(".burger").removeClass("close");
     });
