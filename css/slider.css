@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     margin-right: 70px;
 }
 
@@ -47,7 +47,7 @@
 .card {
     min-width: 100%;
     width: 100%;
-    height: fit-content;
+    /*height: fit-content;*/
     background: var(--offWhite);
     padding: 50px;
     transition: all 300ms ease;
